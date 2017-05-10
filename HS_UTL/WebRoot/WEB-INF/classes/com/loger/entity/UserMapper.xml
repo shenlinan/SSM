@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<!-- namespace对应接口的全类名 -->
+<mapper namespace="com.loger.dao.UserDao">
+	<select id="findAll" resultType="com.loger.entity.User">
+		select * from user
+    </select>
+
+	<select id="findById" resultType="com.loger.entity.User">
+		select * from user where id = #{id}
+    </select>
+
+	<delete id="deleteById" parameterType="int">
+		delete from user where id = #{id}
+    </delete>
+
+	<insert id="addUser" parameterType="com.loger.entity.User">
+		insert into user(id,name,job) values (#{id},#{name},#{job})
+    </insert>
+
+	<update id="updateUser" parameterType="com.loger.entity.User">
+		update user set name=#{name},job=#{job} where id=#{id}
+    </update>
+</mapper>
