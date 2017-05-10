@@ -1,8 +1,10 @@
-#Wed May 10 00:36:58 GMT+08:00 2017
+#Wed May 10 23:56:15 GMT+08:00 2017
 eclipse.preferences.version=1
 encoding//WebRoot/WEB-INF/css=UTF-8
 encoding//WebRoot/WEB-INF/data/flot-data.js=UTF-8
 encoding//WebRoot/WEB-INF/data/morris-data.js=UTF-8
 encoding//WebRoot/WEB-INF/pages=UTF-8
 encoding//WebRoot/WEB-INF/pages/index.html=UTF-8
+encoding//WebRoot/WEB-INF/pages/login.html=UTF-8
+encoding//WebRoot/WEB-INF/pages/regedit.html=UTF-8
 encoding/<project>=UTF-8

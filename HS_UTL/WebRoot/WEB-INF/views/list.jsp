@@ -6,22 +6,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
- <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <table width="60%" border="1" cellpadding="2" cellspacing="0">
         <tr>
             <th>ID</th>
             <th>NAME</th>
-            <th>JOB</th>
+            <th>sex</th>
         </tr>
-        <c:forEach items="${users }" var="user">
             <tr>
-                <td>${user.id }</td>
-                <td>${user.name }</td>
-                <td>${user.job }</td>
+                <td>${user.userid }</td>
+                <td>${user.username }</td>
+                <td>${user.sex }</td>
             </tr>
-        </c:forEach>
     </table>
 </body>
 </html>

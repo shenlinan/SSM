@@ -10,7 +10,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.loger.dao.HsUsersDao;
 import com.loger.dao.UserDao;
+import com.loger.entity.HsUsers;
 import com.loger.entity.User;
 
 @Controller
@@ -19,12 +21,22 @@ public class UserController {
 	ApplicationContext ctx = new ClassPathXmlApplicationContext(
 			"applicationContext.xml");
 	UserDao dao = ctx.getBean(UserDao.class);
-
+	HsUsersDao hdao = ctx.getBean(HsUsersDao.class);
 	@RequestMapping("/list")
 	public String list(HttpServletRequest request) {
 		List<User> list = dao.findAll();
 		request.setAttribute("users", list);
 		return "list";
+	}
+
+	@RequestMapping("/login")
+	public String loginOut() {
+		return "login";
+	}
+
+	@RequestMapping("/register")
+	public String register() {
+		return "register";
 	}
 	
 	@RequestMapping("/index")
@@ -57,5 +69,12 @@ public class UserController {
 	public String update(User user) {
 		dao.updateUser(user);
 		return "success";
+	}
+	
+	@RequestMapping("/listById")
+	public String listBy(HttpServletRequest request) {
+		HsUsers user = hdao.selectByPrimaryKey("1");
+		request.setAttribute("user", user);
+		return "list";
 	}
 }
