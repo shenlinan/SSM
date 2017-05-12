@@ -12,6 +12,8 @@ public interface HsUsersDao {
 	int insertSelective(HsUsers record);
 
 	HsUsers selectByPrimaryKey(String userid);
+	
+	HsUsers login(String username,String password);
 
 	int updateByPrimaryKeySelective(HsUsers record);
 

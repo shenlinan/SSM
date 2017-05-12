@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-    登录成功！<br>
-    <a href="../index.jsp">返回</a>
+    登录失败！<br>
+    <a href="login.jsp">重新登录</a>
 </body>
 </html>

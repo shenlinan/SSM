@@ -70,4 +70,9 @@ public class HsUsers {
 	public void setPhone(Integer phone) {
 		this.phone = phone;
 	}
+	
+	@Override
+	public String toString() {
+		return "User [userid=" + userid + ", username=" + username + ", password=" + password + "]";
+	}
 }

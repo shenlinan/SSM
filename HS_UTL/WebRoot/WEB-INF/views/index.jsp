@@ -109,7 +109,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="user/listById"><i class="fa fa-sign-out fa-fw"></i> 登出</a>
+                        <li><a href="user/login"><i class="fa fa-sign-out fa-fw"></i> 登出</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->

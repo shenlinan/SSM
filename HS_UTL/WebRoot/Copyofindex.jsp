@@ -5,7 +5,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<jsp:forward page="WEB-INF/pages/index.jsp"></jsp:forward>
 </head>
 <body>
 查询所有：<br>

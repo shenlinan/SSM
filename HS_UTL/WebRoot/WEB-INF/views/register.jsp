@@ -29,7 +29,7 @@
 <script type="text/javascript">
 	//注册
 		function regist(){
-			 $(".alert-danger").hide();
+			
 			var userName = $("#userName").val();
 			var passWord = $("#passWord").val();
 			var rePassWord = $("#rePassWord").val();
@@ -47,19 +47,30 @@
 				 return;
 			}
 			
-			$.ajax({type:'post',
-			        url:'regist.action',
-			        data:{userName:userName,passWord:passWord},
+			$(".alert-danger").hide();
+			
+			$.ajax({type:'POST',
+			        url:'registerIn',
+			        data:{username:userName,password:passWord},
 			        dataType:'json',
 			        success:function(info){
-			        	if(info.msg == "1"){
-			        	 	alert("reg success!");
-			        	}else{
+			        	if(info.code == "200200")
+			        	{
+			        	 	alert("注册成功！");
+			        	 	window.location.href = "../index.jsp";
+			        	}
+			        	else
+			        	{
 			        		$(".alert-danger").html("注册失败！");
 				 			$(".alert-danger").show();
 			        	}
 			        },
-			        error:function(){alert("reg failed!");}});
+			        error:function()
+			        {
+			       		$(".alert-danger").html("系统内部错误，请稍候重试！");
+				 		$(".alert-danger").show();
+			        }
+			      });
 		}
 		
 		function showModalLabel()
@@ -82,7 +93,7 @@
                         <form role="form">
                             <fieldset>
                                 <div class="form-group">
-                                    <input id="userName" class="form-control" placeholder="电子邮箱" name="email" type="email" autofocus>
+                                    <input id="userName" class="form-control" placeholder="电子邮箱" name="username" type="email" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input id="passWord" class="form-control" placeholder="密码" name="password" type="password" value="">
@@ -116,7 +127,7 @@
                                 <!-- /.modal-dialog -->
                             </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="#" class="btn btn-primary btn-success btn-block" onclick="regist()">注册</a>
+                                <a href="javascript:volid(0);" class="btn btn-primary btn-success btn-block" onclick="regist()">注册</a>
                                 <button type="button" class="btn btn-outline btn-primary btn-block" onclick="window.location.href = 'login'">已有通行证了？</button>
                             </fieldset>
                         </form>

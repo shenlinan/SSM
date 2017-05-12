@@ -6,6 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <jsp:forward page="WEB-INF/views/index.jsp"></jsp:forward>
+<script type="text/javascript">
+
+</script>
 </head>
 <body>
 
