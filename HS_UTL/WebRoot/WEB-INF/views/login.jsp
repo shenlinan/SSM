@@ -117,7 +117,7 @@
 		       {  
 		          if(data.code == "200200")
 		          {
-		        	window.location.href = "index";
+		        	window.location.href = "../index.jsp";
 		          }
 		          else
 		          {
