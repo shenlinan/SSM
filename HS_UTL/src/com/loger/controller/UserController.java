@@ -98,6 +98,7 @@ public class UserController {
 		{
 			map.put("code", "500");
 		}
+		System.out.println(userInfo.getUsername() +"login in at:");
 		return mapper.writeValueAsString(map);
 	}
 	
@@ -119,5 +120,10 @@ public class UserController {
 			map.put("code", "500");
 		}
 		return mapper.writeValueAsString(map);
+	}
+	
+	@RequestMapping("/matchs")
+	public String matchs(HttpServletRequest request) {
+		return "matchs";
 	}
 }

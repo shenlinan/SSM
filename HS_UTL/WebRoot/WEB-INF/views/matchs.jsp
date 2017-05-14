@@ -13,19 +13,19 @@
     <title>HS-Under The Line.</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="vendor/morrisjs/morris.css" rel="stylesheet">
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +50,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp">炉石-线下赛</a>
+                <a class="navbar-brand" href="../index.jsp">炉石-线下赛</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -125,7 +125,7 @@
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 签到</a>
                         </li>
                         <li>
-                            <a href="user/matchs"><i class="fa fa-bar-chart-o fa-fw"></i> 赛事&报名</a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 赛事&报名</a>
                         </li>
                         <li>
                             <a href="tables.html"><i class="fa fa-table fa-fw"></i> 比赛结果</a>
@@ -143,7 +143,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">赛事</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
